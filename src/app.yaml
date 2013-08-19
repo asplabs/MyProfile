@@ -1,0 +1,16 @@
+application: arunshankerprasad
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: django
+  version: "1.5"
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: handler.application
