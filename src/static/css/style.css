@@ -18,11 +18,11 @@ CONTENTS:
 06 Footer
 07 Bootstrap Carousel
 08 Buttons
-09 Media queries 
+09 Media queries
 ===========================
 */
 
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
@@ -52,7 +52,7 @@ color:#333;
 }
 /*---------- FORMS ----------*/
 
-input[type=text], input[type=submit], textarea {
+input[type=text], input[type=email], input[type=url], input[type=submit], textarea {
 	width: 100%;
 	padding: 0.5em;
 	font-size: 1em;
@@ -64,7 +64,7 @@ input[type=text], input[type=submit], textarea {
 input, button, select, textarea {
 	font-family: 'Quattrocento', serif;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 02 Typography -----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 /*
@@ -164,7 +164,7 @@ em {
 	color: #f0bf00;
 	text-transform: uppercase;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 03 Non-semantic ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 /* New Image Replacement Hack */
@@ -188,7 +188,7 @@ em {
 	font-weight: normal;
 	font-family: 'Quattrocento', serif;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 04 Navbar ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
@@ -249,7 +249,7 @@ ul#menu-main > li > a:hover {
 .navbar-inverse .brand, .navbar-inverse .nav > li > a {
 	text-shadow: none;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 05 Single-Page Sections ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 #headerwrap {
@@ -283,7 +283,7 @@ ul#menu-main > li > a:hover {
 #headerwrap h1 span {
 	color:#f0bf00;
 }
-#headerwrap input[type=text] {
+#headerwrap input[type=text], #headerwrap input[type=email], #headerwrap input[type=url] {
 	background: rgba(227, 231, 228, 1);
 	font-family: 'Open Sans', sans serif;
 	font-size: 1.3125em;
@@ -292,14 +292,14 @@ ul#menu-main > li > a:hover {
 	vertical-align: middle;
 	margin-bottom:0 !important;
 }
-#headerwrap input[type=text]:focus {
+#headerwrap input[type=text]:focus, #headerwrap input[type=email], #headerwrap input[type=url]:focus {
 	background: #43413e;
 	color: #eff1ef;
 	transition: background 0.25 ease-in;
 	-moz-transition: background 0.25 ease-in;
 	-webkit-transition: background 0.25 ease-in;
 }
-#headerwrap input[type=text] {
+#headerwrap input[type=text], #headerwrap input[type=email], #headerwrap input[type=url] {
 	height: 2.9em;
 	width:50%;
 }
@@ -425,37 +425,37 @@ section#portfolio .align {
 	filter: alpha(opacity=99);
 	opacity: 1;
 }
-/* Services */
+/* Career */
 
-section#services {
+section#career {
 	padding-bottom: 9.5em;
 }
-#services h1 {
+#career h1 {
 	font-size: 3em;
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 }
-section#services h2 {
+section#career h2 {
 	font-size: 22px;
 	margin-bottom: 15px;
 	margin-top: 10px;
 	text-align:center;
 }
-section#services p {
+section#career p {
 	margin:10px;
 }
-section#services .align {
+section#career .align {
 	text-align:center;
 	margin-top:10px;
 	font-size: 6em;
 }
-section#services .align .sev_icon {
+section#career .align .sev_icon {
 	text-align:center;
 	margin:10px 0 20px 0;
 	font-size: 0.6em;
 	color:#F0BF00;
 }
-section#services .span3 {
+section#career .span3 {
 	background:#e9e9e9;
 	padding: 20px 0;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -464,7 +464,7 @@ section#services .span3 {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-section#services .span3:hover {
+section#career .span3:hover {
 	background:#e3e3e3;
 	box-shadow: 1px 1px 6px #C1BAC1;
 }
@@ -600,14 +600,14 @@ section#team .align, section#contact .align {
 	position: relative;
 	z-index: 999;
 }
-#theme-form input[type=text], .cform-form textarea {
+#theme-form input[type=text], #theme-form input[type=email], #theme-form input[type=url], .cform-form textarea {
 	background: rgba(227, 231, 228, 1);
 	font-family: 'Open Sans', sans serif;
 	border: 0;
 	text-align: left;
 	vertical-align: middle;
 }
-#theme-form input[type=text]:focus, .cform-form textarea:focus {
+#theme-form input[type=text]:focus, #theme-form input[type=email], #theme-form input[type=url]:focus, .cform-form textarea:focus {
 	background: rgba(101, 106, 100, 1);
 	color: #eff1ef;
 	box-shadow: none;
@@ -617,7 +617,7 @@ section#team .align, section#contact .align {
 	-moz-transition: background 0.25 ease-in;
 	-webkit-transition: background 0.25 ease-in;
 }
-#theme-form input[type=text] {
+#theme-form input[type=text], #theme-form input[type=email], #theme-form input[type=url] {
 	height: 3.25em;
 }
 #theme-form input[type=submit] {
@@ -681,7 +681,7 @@ hr.featurette-divider {
 	height: 9px;
 	background: url("../img/dot-row-3-lt.png") repeat-x;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 06 Footer ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
@@ -696,10 +696,10 @@ footer {
 footer p {
 	margin-top: -130px;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 07 Bootstrap Carousel ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-    
+
     .carousel-caption {
 	background-color: transparent;
 	position: static;
@@ -732,7 +732,7 @@ footer p {
 .carousel-control:link, .carousel-control:visited {
 	color: #262626;
 }
-/* Banner Carousel  */    
+/* Banner Carousel  */
     #banner.carousel {
 	margin-top: 4.75em;
 	margin-bottom: 0;
@@ -766,9 +766,9 @@ footer p {
 }
 #banner.carousel .carousel-control {
 }
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 08 Buttons ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */    
+---------------------------------------------------------------------------------------------------------- */
 .btn {
 	font-family: 'Patua One', cursive;
 	color: #fff;
@@ -801,12 +801,12 @@ footer p {
 	height: auto;
 }
 
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 09 Media queries --------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
 
-/* RESPONSIVE 
+/* RESPONSIVE
 -------------------------------------------------- */
 
     @media (max-width: 1186px) {
@@ -898,7 +898,7 @@ footer p {
  line-height: 1.5;
 }
 }
-    
+
     /* Smaller screens ----------- */
 	@media (max-width : 480px) {
  #headerwrap {
@@ -935,7 +935,7 @@ footer p {
  color: #fff;
 }
 }
-    
+
     /* Smartphones (portrait and landscape) ----------- */
 	@media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
  #feature-headline {
@@ -952,14 +952,14 @@ footer p {
  section.single-page {
  padding: 1em 0;
 }
-		
+
 		/* Feature */
 		#feature-badge {
 /*	display: none; */
 		}
-		
+
 		/* Portfolio & News */
-		
+
 		#news h1 {
  background: transparent;
 }
@@ -988,31 +988,31 @@ footer p {
  section#portfolio hgroup h2 {
  margin-top: 1.5em;
 }
-	
+
 		/* Services */
-		
-		#services h1 {
+
+		#career h1 {
  background: transparent;
 }
- #services h1 span {
+ #career h1 span {
  background: transparent;
  padding: 0;
 }
- section#services h2 {
+ section#career h2 {
  margin-bottom: 0.25em;
 }
- section#services h2, section#services ul {
+ section#career h2, section#career ul {
  text-align: center;
 }
-		
+
 
 	    /* Testimonials */
-	    
+
 		section#testimonials { /*display: none;*/
 }
-	
+
 		/* team */
-		
+
 		#team .team-thumb {
  margin-right: auto;
  margin-left: auto;
@@ -1027,7 +1027,7 @@ footer p {
  margin-left: auto;
  margin-right: auto;
 }
-		
+
 		/* Contact Form */
 
 		#theme-form {
@@ -1044,7 +1044,7 @@ footer p {
  font-size: 32px; /* 34px */
 }
 }
-	
+
 	/* Smartphones (portrait) ----------- */
 	@media only screen  and (max-width : 320px) {
  #feature-headline {
@@ -1058,7 +1058,7 @@ footer p {
  color: #fff;
 }
 }
-	
+
 	/* iPads (portrait and landscape) ----------- */
 	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px) {
  .banner-caption p {
@@ -1068,17 +1068,17 @@ footer p {
  font-size: 4em;
 }
 }
-	
+
 	/* iPads (landscape) ----------- */
 	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : landscape) {
 /* Styles */
 	}
-	
+
 	/* iPads (portrait) ----------- */
 	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : portrait) {
 /* Styles */
 	}
-	
+
 	/* Desktops and laptops ----------- */
 	@media only screen  and (min-width : 1224px) {
 /* Styles */
