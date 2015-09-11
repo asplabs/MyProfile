@@ -173,7 +173,7 @@
               <div class="span12">
                 <div class="cform" id="theme-form">
                   <form action="" method="post" class="cform-form">
-                    {% csrf_token %}
+                    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                     <div class="row">
                       <div class="span6"> <span class="your-name">
                         <input type="text" required="true" name="your-name" placeholder="Your Name" class="cform-text" size="40" title="your name">
